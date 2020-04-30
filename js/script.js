@@ -1,5 +1,19 @@
+// Sensei version
 $(document).ready(function () {
 
+	$('.main_btna, .main_btn, a[href="#sheldure"]').click(function () {
+		$('.overlay').fadeIn(800);
+		$('.modal').slideDown(800);
+	});
+
+	$('.close').click(function () {
+		$('.modal').slideUp(800);
+		$('.overlay').fadeOut(800);
+	});
+
+});
+// My version
+/* $(document).ready(function () {
 	$('.main_btna').on('click', function () {
 		$('.overlay').fadeIn('slow');
 		$('.modal').slideDown('slow');
@@ -20,6 +34,5 @@ $(document).ready(function () {
 		$('.overlay').fadeOut('slow');
 		$('.modal').slideUp('slow');
 	});
+}); */
 
-
-});
